@@ -1,0 +1,211 @@
+/*  Drupal starter theme provided by gazwal.com - Freelance Drupal Development Services  */
+
+.section, #main-in {
+	width: 960px; /* edit to change the width of the page */
+	margin: 0 auto; /* remove 'auto' AND the width to switch to a fluid width */
+}
+body {
+	background-image: url(../artwork/backLuc.png);
+}
+
+/** Sidebars width
+---------------------------------
+*  Changing the width of the sidebars is dead easy, just change the
+*  values below corresponding to the sidebar you want to modify.
+*  Make sure you keep negative values as negative values.
+*  For example, if I want to increase the width of the First sidebar
+*  to 300px, I would have to change each '180' to '300'.
+*
+*
+*  remenber the common #id & .class rules :
+*  .column is used on #content-inner, #sidebar-left, #sidebar-right
+*  .inner is used on #content-inner, #sidebar-left-inner, #sidebar-right-inner
+*
+*  .sidebar => only used in #sidebar-left & #sidebar-right
+*
+*/
+body.two-sidebars #content-inner,
+body.sidebar-first #content-inner {
+	margin-left: 180px; /* Sidebar Left width */
+}
+
+#sidebar-first {
+	width: 175px; /* Sidebar Left width */
+	margin-right: -180px; /* negative Sidebar Left width */
+}
+
+body.two-sidebars #content-inner,
+body.sidebar-second #content-inner {
+	margin-right: 270px; /* Sidebar Right width */
+}
+
+#sidebar-second {
+   	width: 270px; /* Sidebar Right width */
+	margin-right: -10px;
+	margin-top: 5px;
+}
+
+/** Columns inner
+---------------------------------
+*  You can change the padding inside the columns without changing the
+*  width of them by just usinbg the INNER div of each column
+*/
+.inner {
+	/*padding: 10px;*/
+}
+
+/** Blocks
+* All Block, node and view styling
+*/
+.block-views {
+	background-color: #000033;
+	border: solid 5px #FFF;
+	box-shadow: 5px 5px 5px #000;
+	color: #FFF;
+	padding: 10px;
+}
+.block-views img {
+	border: solid 1px #FFF;
+	margin-bottom: 10px;
+}
+.node-page {
+	padding: 2% 5%;
+}
+/**.node-machinefiche {
+*	background-color: #000033;
+*	border: solid 5px #FFF;
+*	box-shadow: 5px 5px 5px #000;
+*	color: #FFF;
+*	padding: 10px;	
+*}**/
+.node-machinefiche img {
+	float: left;
+	display: inline-block;
+	border: solid 1px #FFF;
+	margin-bottom: 10px;
+	margin-right: 10px;
+	box-shadow: 5px 5px 5px #000;
+}
+.node-machinefiche p {
+	clear: both;
+}
+#block-views-machines-block {
+	color: #000033;
+	border: none;
+	box-shadow: none;
+}
+#block-views-machines-block h2 {
+	display: none;
+}
+
+#block-views-machines-block td {
+	font-size: 22px;
+	background-color: #000033;
+	border: none;
+	/*box-shadow: 5px 5px 5px #000;*/
+	/*color: #FFF;*/
+	padding: 10px;
+	text-align: center;
+	vertical-align: top;
+}
+#block-views-teaser-block {
+	margin-top: 1px;
+	padding-top: 20px;
+	background-color: #FFF;
+	color: #000033;
+	font-variant: small-caps;
+	font-weight: bold;
+	border: none;
+	box-shadow: 5px 5px 5px #000;
+}
+#block-views-teaser-block h2 {
+	display: none;
+}
+.view-machines img {
+	float: left;
+	border: solid 1px #FFF;
+	/*margin-bottom: 10px;*/
+	box-shadow: 5px 5px 5px #000;
+	margin: 8px 20px;
+}
+h2 .view-machines {
+	display: none;
+}
+#block-views-copyright-block {
+	background-color: transparent;
+	border: none;
+	box-shadow: none;
+}
+#block-views-copyright-block h2 {
+	display: none;
+}
+#block-views-copyright-block a {
+	color: #000033;
+}
+.field-name-field-link {
+	display: none;
+}
+
+.node-album img {
+	display: inline-block;
+	float: left;
+	margin: 10px;
+	border: 1px solid #fff;
+}
+.node-album .field-name-body {
+	margin-left: 10px;
+	margin-top: 10px;
+	line-height: 0.5em;
+}
+
+
+/** LAYOUT RULES
+---------------------------------
+*  do not change if you're not sure you know what you're doing !!!
+*/
+#content {
+	float: left;
+	width: 100%;
+	margin-right: -100%;
+	padding: 0;
+}
+#content-area {
+	background-color: #000033;
+	border: solid 5px #FFF;
+	box-shadow: 5px 5px 5px #000;
+	color: #FFF;
+	min-height: 557px;
+	padding: 5px;
+}
+
+                                   
+#sidebar-first {
+	float: left;
+}
+
+                                   
+#sidebar-second {
+	float: right;
+}
+
+/* header */
+#header #header-region {
+	margin-top: 10px;
+	overflow: hidden;
+}
+
+/* footer */
+#footer {
+	float: none;
+	clear: both;
+}
+
+/* Layout Helpers */
+#header,
+#footer,
+#main #content .mission,
+#main #content .breadcrumb,
+#main #content .node {
+	clear: both;
+}
+
